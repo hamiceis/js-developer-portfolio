@@ -19,22 +19,19 @@
         "name": "Postgresql",
         "logo": "https://raw.githubusercontent.com/hamiceis/js-developer-portfolio/main/data/imgs/postgresql.png"
       },
-{
+      {
         "name": "CSS",
         "logo": "https://raw.githubusercontent.com/hamiceis/js-developer-portfolio/main/data/imgs/css.png"
       },
-},
-{
+      {
         "name": "JavaScript",
         "logo": "https://raw.githubusercontent.com/hamiceis/js-developer-portfolio/main/data/imgs/js.png"
       },
-},
-{
+      {
         "name": "HTML",
         "logo": "https://raw.githubusercontent.com/hamiceis/js-developer-portfolio/main/data/imgs/html.png"
       },
-},
-{
+      {
         "name": "Github",
         "logo": "https://raw.githubusercontent.com/hamiceis/js-developer-portfolio/main/data/imgs/github.png"
       }
@@ -42,7 +39,6 @@
     "softSkills": [
       "Empatia",
       "Liderança",
-      "Trabalho em equipe",
       "Flexibilidade",
       "Organização"
     ]

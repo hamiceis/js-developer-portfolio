@@ -31,20 +31,21 @@
     <main class="main">
       <header class="header">
         <img
+          id="profile.photo"
           class="photo"
           src="assets/kjgkghjghj.png"
           alt="foto do perfil"
           loading="lazy"
         />
-        <h1 class="title">Olá,<br />eu sou Hamiceis Pereira</h1>
+        <h1 class="title">Olá,<br/>eu sou <span id="profile.name">Carregando...</span></h1>
         <div class="informations">
-          <p class="job">Front-end freelancer</p>
-          <p class="location">Recife-PE</p>
+          <p class="job"><span id="profile.job">Carregando...</span></p>
+          <p class="location"><span id="profile.location">Carregando...</span></p>
           <p class="phone">
-            <a href="tel:+5581998451051">(81)9.9845-1051</a>
+            <a href=""><span id="profile.phone">Carregando...</span></a>
           </p>
           <p class="email">
-            <a href="mailto:hamiceis@hotmail.com">hamiceis@hotmail.com</a>
+            <a href=""><span id="profile.email">Carregando...</span></a>
           </p>
         </div>
       </header>
@@ -71,10 +72,8 @@
   
             <section class="personal">
               <h3>Habilidades Pessoais</h3>
-              <ul>
-                <li>Organizado</li>
-                <li>Flexibilidade</li>
-                <li>Prestativo</li>
+              <ul id="profile.skills.softskills">
+                
               </ul>
             </section>
           </div>
@@ -132,5 +131,7 @@
     </main>
 
     <script src="./assets/js/acordeon.js"></script>
+    <script src="./assets/js/api.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
