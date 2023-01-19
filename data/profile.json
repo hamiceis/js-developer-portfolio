@@ -46,12 +46,17 @@
   "portfolio": [
     {
       "name": "Pokedex feita em React",
-      "url": "https://github.com/hamiceis/pokedex-react",
+      "url": "https://github.com/hamiceis/Pokedex-React",
       "github": true
     },
     {
       "name": "Portfolio em Javascript",
       "url": "https://github.com/hamiceis/js-developer-portfolio",
+      "github": true
+    },
+    {
+      "name": "Formulário em React, usando React-Hook-Form",
+      "url": "https://github.com/hamiceis/formulario-React",
       "github": true
     }
   ],

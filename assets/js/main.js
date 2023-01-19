@@ -45,10 +45,21 @@ function updateLanguages(profileData){
   })
 }
 
+function updatePortfolio(profileData){
+  const portfolio = document.querySelector('.portfolio')
+  const projects = profileData?.portfolio?.reduce((acc, { name,url }) => {
+    acc += `<li><h3 class="github">${name}</h3><a href="${url}" target="_blank">${name}</a></li>`
+    return acc
+  },'')
+
+  portfolio.innerHTML = projects
+}
+
 (async () => {
   const profileData = await fetchProfileData()
   updateDataProfile(profileData)
   updateSkills(profileData)
   updatePersonalSkill(profileData)
   updateLanguages(profileData)
+  updatePortfolio(profileData)
 })()
