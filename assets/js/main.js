@@ -29,8 +29,18 @@ function updateSkills(profileData){
   skills.innerHTML = skill
 }
 
+function updatePersonalSkill(profileData){
+  const personalSkill = document.getElementById('profile.skills.hardSkills')
+  const hardSkills = profileData?.skills.hardSkills.map(skill => {
+    return ` <li><img src="${skill.logo}" alt="${skill.name}"></li>`
+  }).join('')
+
+  personalSkill.innerHTML = hardSkills
+}
+
 (async () => {
   const profileData = await fetchProfileData()
   updateDataProfile(profileData)
   updateSkills(profileData)
+  updatePersonalSkill(profileData)
 })()
