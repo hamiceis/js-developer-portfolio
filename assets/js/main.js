@@ -38,9 +38,17 @@ function updatePersonalSkill(profileData){
   personalSkill.innerHTML = hardSkills
 }
 
+function updateLanguages(profileData){
+  const languagesList = document.querySelector('#languages')
+  profileData?.languages.forEach(skill => {
+    languagesList.innerHTML += `<li>${skill}</li>`
+  })
+}
+
 (async () => {
   const profileData = await fetchProfileData()
   updateDataProfile(profileData)
   updateSkills(profileData)
   updatePersonalSkill(profileData)
+  updateLanguages(profileData)
 })()
